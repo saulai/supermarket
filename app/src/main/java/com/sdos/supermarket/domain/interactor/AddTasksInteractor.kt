@@ -46,7 +46,7 @@ class AddTasksInteractor constructor(
         }
 
         return workLoadMatrix.toList()
-            .sortedBy { (key, value) -> value }
+            .sortedBy { (_, value) -> value }
             .toMap().entries.first().key
     }
 
