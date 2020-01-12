@@ -1,0 +1,54 @@
+<resources>
+    <!--COMMON-->
+    <string name="app_name" translatable="false">Supermarket</string>
+    <string name="dialog_accept">Accept</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+
+    <!--MENU-->
+    <string name="menu_product">Peaches</string>
+    <string name="menu_close_session">Log out</string>
+
+    <!--SPLASH-->
+    <string name="version">Version:</string>
+    <string name="splash_label">Supermarket - Prueba SDOS</string>
+
+    <!--LOGIN-->
+    <string name="login_title">Login</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_user">User</string>
+    <string name="login_password">Password</string>
+    <string name="login_credentials">Enter your credentials</string>
+
+    <!--MANAGER-->
+    <string name="manager_add_task">Add task</string>
+    <string name="manager_title">Manager</string>
+    <string name="create_new_task_label">Create new Task</string>
+    <string name="create_task_description">Description</string>
+    <string name="create_task_time">Time (Hours)</string>
+    <string name="task_successfully_asigned">The task was successfully asigned to</string>
+
+    <!--PRODUCT-->
+    <string name="product_title">Product</string>
+    <string name="product_category">Fruit -></string>
+    <string name="product_item">Peaches</string>
+    <string name="product_farmers">Farmers:</string>
+    <string name="product_farmer_name_not_available">Farmer name not available</string>
+
+    <!--TECHNICIAN-->
+    <string name="technician_title">Technician</string>
+
+    <!--HOME-->
+    <string name="home_label">Home</string>
+    <string name="home_product_label">Home</string>
+
+    <!--ERRORS-->
+    <string name="error_login_title">Login error.</string>
+    <string name="error_login_message">Incorrect user or password.</string>
+    <string name="error_add_task_title">Add task error.</string>
+    <string name="error_add_task_message">You have to fill all fields in order to add a task.</string>
+    <string name="error_network_title">Network error.</string>
+    <string name="error_network_message">Please try again later.</string>
+
+</resources>

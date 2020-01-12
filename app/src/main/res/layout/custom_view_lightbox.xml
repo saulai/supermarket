@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin_default"
+    android:paddingTop="@dimen/margin_big"
+    android:paddingEnd="@dimen/margin_default"
+    android:paddingBottom="@dimen/margin_default">
+
+    <ImageView
+        android:id="@+id/lightboxImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_dialog_icon_width"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_supermarket_big" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lightboxTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:textAlignment="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lightboxBodyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:textAlignment="center"
+        tools:text="body" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lightboxBodyTextView">
+
+        <Button
+            android:id="@+id/lightboxCancelButton"
+            style="@style/ButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lightboxAcceptButton"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Cancel"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/lightboxAcceptButton"
+            style="@style/ButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="Accept"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lightboxCancelButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

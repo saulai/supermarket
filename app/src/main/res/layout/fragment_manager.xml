@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/managerLayout"
+    android:paddingTop="@dimen/margin_big"
+    android:paddingBottom="@dimen/margin_big">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newTaskTitle"
+        style="@style/HeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_big"
+        android:layout_marginStart="@dimen/margin_default"
+        android:gravity="center"
+        android:text="@string/create_new_task_label"
+        android:textSize="@dimen/text_big"
+        app:layout_constraintStart_toEndOf="@id/taskTypeSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/taskTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newTaskTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskDescriptionIL"
+        style="@style/LoginInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_big"
+        android:hint="@string/create_task_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskTypeSpinner">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taskDescriptionIET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskDurationIL"
+        style="@style/LoginInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_big"
+        android:hint="@string/create_task_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskDescriptionIL">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taskDurationIET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSend"
+            android:maxLength="1"
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addTaksButton"
+        style="@style/SupermarketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manager_add_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
