@@ -2,8 +2,10 @@ package com.sdos.supermarket.data.repository
 
 import com.sdos.supermarket.data.room.SupermarketDatabase
 import com.sdos.supermarket.domain.model.User
+import com.sdos.supermarket.domain.repository.UserRepository
 
-class UserRepositoryImpl(private val supermarketDatabase: SupermarketDatabase) : UserRepository {
+class UserRepositoryImpl(private val supermarketDatabase: SupermarketDatabase) :
+    UserRepository {
     override suspend fun getUser(userId: String): User {
         return supermarketDatabase.userDao().getUserById(userId)
     }

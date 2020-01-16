@@ -3,8 +3,10 @@ package com.sdos.supermarket.data.repository
 import com.sdos.supermarket.data.room.SupermarketDatabase
 import com.sdos.supermarket.domain.model.BaseTask
 import com.sdos.supermarket.domain.model.Task
+import com.sdos.supermarket.domain.repository.TaskRepository
 
-class TaskRepositoryImpl(private val supermarketDatabase: SupermarketDatabase) : TaskRepository {
+class TaskRepositoryImpl(private val supermarketDatabase: SupermarketDatabase) :
+    TaskRepository {
 
     override suspend fun addBaseTasks(baseTaskList: List<BaseTask>) {
         baseTaskList.forEach {

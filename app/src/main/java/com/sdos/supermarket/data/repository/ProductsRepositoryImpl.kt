@@ -4,6 +4,7 @@ import com.sdos.supermarket.common.Either
 import com.sdos.supermarket.data.api.ProductsApiClient
 import com.sdos.supermarket.data.cache.ProductsCache
 import com.sdos.supermarket.domain.model.Product
+import com.sdos.supermarket.domain.repository.ProductsRepository
 
 const val CATEGORY_FRUIT = "Fruit"
 const val ITEM_PEACHES = "Peaches"

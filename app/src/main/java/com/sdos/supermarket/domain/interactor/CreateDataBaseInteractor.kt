@@ -1,8 +1,8 @@
 package com.sdos.supermarket.domain.interactor
 
 import com.sdos.supermarket.common.Either
-import com.sdos.supermarket.data.repository.TaskRepository
-import com.sdos.supermarket.data.repository.UserRepository
+import com.sdos.supermarket.domain.repository.TaskRepository
+import com.sdos.supermarket.domain.repository.UserRepository
 import com.sdos.supermarket.domain.enum.TaskType
 import com.sdos.supermarket.domain.enum.UserType
 import com.sdos.supermarket.domain.model.BaseTask

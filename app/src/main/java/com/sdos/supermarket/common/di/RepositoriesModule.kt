@@ -4,6 +4,10 @@ import com.sdos.supermarket.data.api.ProductsApiClient
 import com.sdos.supermarket.data.cache.ProductsCache
 import com.sdos.supermarket.data.repository.*
 import com.sdos.supermarket.data.room.SupermarketDatabase
+import com.sdos.supermarket.domain.repository.LoginRepository
+import com.sdos.supermarket.domain.repository.ProductsRepository
+import com.sdos.supermarket.domain.repository.TaskRepository
+import com.sdos.supermarket.domain.repository.UserRepository
 import org.koin.dsl.module
 
 val repositoryModule = module {

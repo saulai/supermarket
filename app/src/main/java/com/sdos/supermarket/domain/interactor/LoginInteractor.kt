@@ -1,8 +1,8 @@
 package com.sdos.supermarket.domain.interactor
 
 import com.sdos.supermarket.common.Either
-import com.sdos.supermarket.data.repository.LoginRepository
-import com.sdos.supermarket.data.repository.UserRepository
+import com.sdos.supermarket.domain.repository.LoginRepository
+import com.sdos.supermarket.domain.repository.UserRepository
 import com.sdos.supermarket.domain.model.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

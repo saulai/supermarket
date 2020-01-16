@@ -1,6 +1,6 @@
 package com.sdos.supermarket.domain.interactor
 
-import com.sdos.supermarket.data.repository.ProductsRepository
+import com.sdos.supermarket.domain.repository.ProductsRepository
 import com.sdos.supermarket.domain.model.Product
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

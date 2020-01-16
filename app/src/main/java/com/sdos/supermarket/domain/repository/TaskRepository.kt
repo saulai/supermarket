@@ -1,4 +1,4 @@
-package com.sdos.supermarket.data.repository
+package com.sdos.supermarket.domain.repository
 
 import com.sdos.supermarket.domain.model.BaseTask
 import com.sdos.supermarket.domain.model.Task

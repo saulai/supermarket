@@ -1,5 +1,7 @@
 package com.sdos.supermarket.data.repository
 
+import com.sdos.supermarket.domain.repository.LoginRepository
+
 class LoginRepositoryImpl(
 ) : LoginRepository {
 
