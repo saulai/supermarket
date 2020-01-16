@@ -7,7 +7,7 @@ class ProductEntity(
     @SerializedName("farmer_id") val farmerId: String,
     @SerializedName("phone1") val phoneNumber: String?,
     @SerializedName("zipcode") val zipCode: String?,
-    val category: String,
-    val item: String,
-    val business: String?
+    @SerializedName("category") val category: String,
+    @SerializedName("item") val item: String,
+    @SerializedName("business") val business: String?
 )
